@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Data Unit Converter</title>
+        <link rel="stylesheet" href="desinger.css">
+        <script src="math.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Simple Data Unit Converter</h1>
+            <p>Cause why not make a simple converter without flashy text?</p>
+        </header>
+        <div class="frame">
+            <label id="madrin">Please Select your desired Data unit</label>
+            <hr>
+            <label for="start_unit">Select Target Unit</label>
+            <select id="start_unit">
+                <option value="b">Bytes</option>
+                <option value="kb">KiloBytes</option>
+                <option value="mb">Megabytes</option>
+                <option value="gb">GigaBytes</option>
+                <option value="tb">Terabytes</option>
+                <option value="pb">Petabytes</option>
+            </select>
+            <br>
+            <label>Please provide value you want to convert:</label>
+            <input type="number" id="feedme" placeholder="Put here">
+            <br>
+            <label for="end_unit">Select Converted Unit</label>
+            <select id="end_unit">
+                <option value="b">Bytes</option>
+                <option value="kb">KiloBytes</option>
+                <option value="mb">Megabytes</option>
+                <option value="gb">GigaBytes</option>
+                <option value="tb">Terabytes</option>
+                <option value="pb">Petabytes</option>
+            </select>
+            <br>
+            <button type="button" id="Matheticly_possible">Convert</button>
+        </div>
+        <br>
+        <div class="frame">
+            <p>Note: If the Converter said NaN, please refresh the page so it chould work or not cause i can't even fixed it 😭</p>
+            <label>Result:</label>
+            <br>
+            <label id="token_wasted">0</label>
+            <label>(By Decimal)</label>
+            <br>
+            <label id="token_also_wasted">0</label>
+            <label>(By Binary)</label>
+        </div>
+    </body>
+</html>
