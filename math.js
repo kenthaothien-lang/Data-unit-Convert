@@ -4,7 +4,7 @@ const uefi_lb = document.getElementById("token_wasted")
 const bios_lb = document.getElementById("token_also_wasted")
 const OG = document.getElementById("start_unit")
 const Converted = document.getElementById("end_unit")
-const Target = document.getElementById("feedme").value
+const Target = document.getElementById("feedme")
 let Nyeh = ""
 const unit_legacy  = {
      b: 1,
@@ -26,7 +26,7 @@ const unit = {
 Start.addEventListener(
     "click",
     function EifleTower() {
-        const valve = parseInt(Target)
+        const valve = parseInt(Target.value)
         const wow = valve * unit[OG.value]
         uefi_lb.textContent = wow / unit[Converted.value]
         const wow_legacy = valve * unit_legacy[OG.value]
